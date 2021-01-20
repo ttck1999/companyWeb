@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color:#666666;
+}
+html, body { 
+	height: 100%; 
+}
+a{
+	color: #666666;
+	text-decoration: none;
+}
+.aboutUs-banner {
+	width: 100%;
+	/*height: 725px;*/
+	position: relative;
+	min-width: 1100px;
+}
+.aboutUs-center{
+	width: 100%;
+  min-width: 1100px;
+}
+
+.aboutUs-center-first{
+	background: #fff;
+  border-radius: 10px;
+  width: 1000px;
+  position: relative;
+  top: -70px;
+  left: 50%;
+  height: 500px;
+  min-width: 1000px;
+  margin-left: -500px;
+}
+.aboutUs-center-first1{
+	margin-top: 80px;
+}
+.aboutUs-center-first-left,
+.aboutUs-center-first-right {
+	float: left;
+}
+.aboutUs-center-first-left{
+  padding: 203px 20px 0 77px;
+}
+.aboutUs-center-first-left-text{
+	color: #088AC4;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 26px;
+	line-height: 56px;
+  width: 136px;
+  text-align: center;
+  margin-top: 54px;
+}
+.aboutUs-center-first-right{
+  width: 733px;
+  color: #000;
+  /* padding: 20px 2% 20px 0; */
+  height: 412px;
+  font-size: 13px;
+  margin-top: 61px;
+  margin-left: 10px;
+}
+.aboutUs-center-first-right div{
+	margin-bottom: 20px;
+	line-height: 24px;
+}
+.aboutUs-center-first-left-line{
+	width: 136px;
+	height: 2px;
+	background: #999999;
+}
+.aboutUs-center-first-right-ttt{
+	margin-left: 75px;
+}
+.aboutUs-center-first-right1{
+	padding: 50px 0 20px 23px;
+}
+.aboutUs-center-first-title{
+	font-style: normal;
+	font-weight: 600;
+	font-size: 26px;
+	line-height: 47px;
+	color: #088AC4;
+	padding: 30px 0 0 15%;
+}
+.aboutUs-center-first-list{
+	margin-top: 40px;
+}
+.aboutUs-center-first-list li{
+	margin: 0 15%;
+}
+.aboutUs-center-first-list li span{
+	display: inline-block;
+	line-height: 70px;
+	border-bottom: 2px solid #999999;
+	color: #000;
+}
+.aboutUs-center-first-list li:first-child span {
+	border-top: 2px solid #999999;
+}
+.aboutUs-center-first-list li span:last-child{
+	width: 67%;
+	padding-left:20px; 
+}
+.aboutUs-center-first-list li span:first-child{
+	width: 18%;
+	margin-right: 11%;
+	text-align: center;
+}

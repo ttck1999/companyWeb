@@ -1,0 +1,161 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color:#666666;
+}
+html{
+	background-color: #f0f3f5;
+}
+html, body { 
+	height: 100%; 
+}
+a{
+	color: #666666;
+	text-decoration: none;
+}
+.index-banner {
+	width: 100%;
+	/*height: 725px;*/
+	position: relative;
+	min-width: 1100px;
+}
+
+.index-center{
+	width: 100%;
+	background: url(../images/bg.png) no-repeat center center;
+	position: relative;
+}
+
+.index-center-all{
+	height: 100%;
+	width: 100%;
+	background: #f0f3f5;
+position: relative;
+}
+
+.index-center-top{
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 35px;
+  min-width: 1100px;
+}
+.index-center-top2{
+	  width: 95%;
+}
+.index-center-left{
+  width: 24%;
+  height: 100%;
+  color: #333;
+  float: left;
+  line-height: 30px;
+  margin-left: 9%;
+}
+.index-center-left2{
+	margin-left: 5%;
+}
+.index-center-left-titie{
+	color: #19A2E6;
+  font-size: 20px;
+  margin: 32px 0;
+}
+.index-center-left-titie span{
+	display: inline-block;
+  height: 2px;
+  width: 65px;
+  background: #19A2E6;
+  position: relative;
+  top: -6px;
+  left: 0;
+}
+.index-center-left-titie b{
+  font-weight: normal;
+  margin-left: 10px;
+}
+.index-center-right{
+  width: 67%;
+  height: 100%;
+  color: #333;
+  float: left;
+}
+.index-center-right2{
+	width: 63%;
+}
+.index-center-right img{
+	background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+
+.top.top-section-blur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.is-bg{
+	display: block;
+  opacity: 0;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: -20%;
+  left: -20%;
+  background-image: url(../images/bg_watercolor_2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-animation: section-blur 10s ease-in-out 0s;
+  animation: section-blur 10s ease-in-out 0s;
+}
+.is-shown{
+	 opacity:1;
+}
+
+@-webkit-keyframes section-blur { 0% { opacity: 1;
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  50% { opacity: 0.5;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% { opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes section-blur { 0% { opacity: 1;
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  50% { opacity: 0.5;
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% { opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+
+/*.infiltration-canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}*/
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

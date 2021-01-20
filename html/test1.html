@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>document</title>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+	<OBJECT   id=locator   classid=CLSID:76A64158-CB41-11D1-8B02-00600806D9B6   VIEWASTEXT> </OBJECT>
+<OBJECT   id=foo   classid=CLSID:75718C9A-F029-11d1-A1AC-00C04FB6C223> </OBJECT>
+</body>
+<script type="text/javascript">
+  function getMac() {
+    var locator = new ActiveXObject("WbemScripting.SWbemLocator"); // 创建ActiveXObject对象
+    var service = locator.ConnectServer("."); //连接本机服务器
+    var properties = service.ExecQuery("SELECT * FROM Win32_NetworkAdapterConfiguration Where IPEnabled = TRUE"); // 查询地址适配器信息
+    var e = new Enumerator(properties);
+    var macs = [];
+    for (; !e.atEnd(); e.moveNext()) {
+        macs.push(e.item().MACAddress);
+    }
+    alert(macs.join(","));
+   // return macs.join(","); // 用逗号拼接mac数组
+}
+ getMac()
+       </script>
+</html>

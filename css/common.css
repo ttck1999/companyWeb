@@ -1,0 +1,240 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color:#666666;
+}
+html{
+	background-color: #f0f3f5;
+}
+html, body { 
+	height: 100%; 
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+	color: #666666;
+	text-decoration: none;
+}
+.common{
+	height: 100%;
+}
+div,span,ul,li{
+    cursor: pointer;
+}
+.common-nav{
+  z-index: 1000;		
+	width: 90%;
+	height: 80px;
+	background: #FFFFFF;
+	box-shadow: 0px 2px 4px #19A2E6;
+	border-radius: 10px;
+  position: absolute;
+  top: 27px;
+  margin-left: -45%;
+  left: 50%;
+  transition: border-radius 0.3s cubic-bezier(0.06, 0.01, 0, 0.99), width 0.5s cubic-bezier(0.06, 0.01, 0, 0.99) 0.4s, background 0.8s cubic-bezier(0.06, 0.01, 0, 0.99);
+}
+.common-banner-logo{
+	/*height: 100%;*/
+	width: 100%;
+	background-size: cover;
+}
+.is-being-scrolled {
+    width: 80px;
+    background-color: #1999DA;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-transition: border-radius 0.3s cubic-bezier(0.06, 0.01, 0, 0.99) 0.7s, width 0.7s cubic-bezier(0.06, 0.01, 0, 0.99), background 0.3s cubic-bezier(0.06, 0.01, 0, 0.99) 0.7s;
+    transition: border-radius 0.3s cubic-bezier(0.06, 0.01, 0, 0.99) 0.7s, width 0.7s cubic-bezier(0.06, 0.01, 0, 0.99), background 0.3s cubic-bezier(0.06, 0.01, 0, 0.99) 0.7s;
+}
+.common-nav-wwwlogo {
+    width: 80px;
+    height: 80px;
+    background-color: #1999DA;
+    border-radius: 50%;
+    overflow: hidden;
+    display: none;
+    -webkit-transition: border-radius 0.3s cubic-bezier(0.06, 0.01, 0, 0.99) 0.7s, width 0.7s cubic-bezier(0.06, 0.01, 0, 0.99), background 0.3s cubic-bezier(0.06, 0.01, 0, 0.99) 0.7s;
+    transition: border-radius 0.3s cubic-bezier(0.06, 0.01, 0, 0.99) 0.7s, width 0.7s cubic-bezier(0.06, 0.01, 0, 0.99), background 0.3s cubic-bezier(0.06, 0.01, 0, 0.99) 0.7s;
+}
+.common-nav-logo-ww {
+    height: 100%;
+    float: left;
+   
+    fill: #1999DA;
+    -webkit-transition: fill 1s cubic-bezier(0.06, 0.01, 0, 0.99);
+    transition: fill 1s cubic-bezier(0.06, 0.01, 0, 0.99);
+}
+.common-nav-wwwlogo img {
+  height: 100%;
+  width: 100%;
+  margin-top: 3px;
+
+  fill: #fff;
+  -webkit-transition: fill 0.5s cubic-bezier(0.06, 0.01, 0, 0.99) 1s;
+  transition: fill 0.5s cubic-bezier(0.06, 0.01, 0, 0.99) 1s;
+}
+
+.common-nav.is-being-scrolled .common-nav-logo-textactive{
+	opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.06, 0.01, 0, 0.99);
+  transition: opacity 0.3s cubic-bezier(0.06, 0.01, 0, 0.99);
+  pointer-events: none;
+}
+.common-nav.is-being-scrolled .common-nav-cont{
+  opacity: 0;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.06, 0.01, 0, 0.99);
+  transition: opacity 0.3s cubic-bezier(0.06, 0.01, 0, 0.99);
+  pointer-events: none;
+}
+.common-nav-logo {
+	width: 170px;
+	height: 44px;
+	float: left;
+	margin-top: 16px;
+  margin-left: 11px;
+}
+.common-nav-logo-text{
+	 height: 100%;
+   float: left;
+
+	 opacity: 1;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.06, 0.01, 0, 0.99) 1s;
+  transition: opacity 0.3s cubic-bezier(0.06, 0.01, 0, 0.99) 1s;
+  pointer-events: initial;
+}
+.common-nav-cont{
+  float: right;
+  margin-top: 23px;
+  margin-right: 5%;
+
+  opacity: 1;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.06, 0.01, 0, 0.99) 1s;
+  transition: opacity 0.3s cubic-bezier(0.06, 0.01, 0, 0.99) 1s;
+  pointer-events: initial;
+}
+.common-nav-tip{
+	float: left;
+  padding: 5px 8px;
+  font-size: 18px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.common-nav-tip:hover{
+	color: #009DE4;
+	border-bottom: 3px solid #009DE4;
+	cursor:pointer;
+}
+
+
+.common-nav-tip--avtive{
+	color: #009DE4;
+	border-bottom: 3px solid #009DE4;
+}
+
+.common-contact{
+	background: #1999DA;
+	height: 300px;
+	width: 100%;
+	min-width: 1100px;
+}
+.common-contact-left{
+	width: 35%;
+  float: left;
+  margin-left: 10%;
+}
+.common-contact-left-all{
+	width: 290px;
+	margin-top: 100px;
+}
+.common-contact-left-all div{
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+.common-contact-left-all img{
+	margin-right: 15px;
+}
+.common-contact-center{
+	float: left;
+	width: 10%;
+	text-align: center;
+	margin-top: 73px;
+}
+.common-contact-center img {
+	height: 157px;
+	width: 126px;
+}
+.common-contact-right{
+	float: left;
+	width: 35%;
+	margin-right: 10%;
+	padding-top: 146px;
+	text-align: right;
+}
+.common-contact-right-text{
+	color: #fff;
+  font-size: 16px;
+  padding: 0 10px;
+}
+.common-footer{
+	background: #BCDAEE;
+	height: 50px;
+	width: 100%;
+	min-width: 1100px;
+}
+.common-footer-cont{
+	color: #1BA1E6;
+	text-align: right;
+  line-height: 50px;
+  margin-right: 20%;
+}
+
+/*产品与服务的下拉框的样式*/
+.productServices-nav{
+	position: relative;
+	cursor:pointer;
+}
+/* .productServices-nav:hover .productServices-list{
+	display: block;
+} */
+.productServices-list{
+	display: none;
+	position: absolute;
+	left: -34px;
+	top: 38px;
+  background: #fff;
+	color: #666;
+	font-size: 14px;
+}
+
+.productServices-list-item{
+	height: 40px;
+  line-height: 40px;
+  cursor:pointer;
+  
+}
+.productServices-list-item a{
+	display: inline-block;
+  padding: 0 10px;
+  width: 166px;
+}
+.productServices-list-item:hover a{
+	color: #009DE4;
+}
+.productServices-list-item:first-child{
+	margin-top: 30px;
+}
+
+.productServices-list-item--active a{
+	color: #009DE4;
+}
